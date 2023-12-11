@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+
+body {
+    background-image: url("pic/WhatsApp\ Image\ 2023-12-10\ at\ 22.02.50.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+h2 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+/* nav bar */
+
+nav .nav-link {
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+nav .nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 1s;
+}
+
+nav .nav-link:hover::after {
+    width: 100%;
+}
+
+nav,
+.card {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav .navbar-brand {
+    font-size: 32px;
+    animation: logo-color 5s linear infinite alternate;
+}
+
+@keyframes logo-color {
+    0% {
+        color: #ff00e1
+    }
+
+    50% {
+        color: #772de6
+    }
+
+    100% {
+        color: #ff00e1
+    }
+}
+
+/* card */
+
+.btn {
+    background-image: linear-gradient(to bottom, #ff00e1, #632bb8);
+    color: white;
+    transition: all 1s;
+}
+
+.btn:hover {
+
+    background-image: linear-gradient(to bottom, #632bb8, #ff00e1);
+
+}
